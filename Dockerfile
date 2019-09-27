@@ -6,12 +6,16 @@ ENV TZ "Asia/Taipei"
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
-    apt-get clean
     
-    apt-install -y 
+    apt-install -y \
       curl \
       wget \
-      openssh 
+      openssh \
+      && \
+      
+    apt-get clean
+    
+    
 
 #define any config to copy 
 
