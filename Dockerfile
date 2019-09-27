@@ -7,7 +7,7 @@ ENV TZ "Asia/Taipei"
 RUN apt-get update -y && \
     apt-get upgrade -y && \
     
-    apt-install -y \
+    apt-get install -y \
       curl \
       wget \
       openssh \
