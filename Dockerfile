@@ -6,13 +6,15 @@ ENV TZ "Asia/Taipei"
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
-    apt-get clean && \
+    
     apt-get install -y \
       curl \
       wget \
-      openssh \
+      ssh \
+      openssl \
       && \
-      
+    
+    apt-get clean
    
     
     
